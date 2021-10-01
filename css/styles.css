@@ -111,6 +111,7 @@ hr {
   max-width: 60%;
   margin: auto;
   display: block;
+  padding: 2rem;
 }
 
 .avatar h1 {
@@ -118,13 +119,15 @@ hr {
   margin: 2rem 0rem;
 }
 
+.avatar span {
+  color: var(--primary-color);
+}
+
 /* section  */
 .section {
   padding: 1rem 1rem;
+  margin: 2rem 0rem;
   border-radius: 0.5rem;
-}
-
-.section h2 {
   text-align: center;
 }
 
@@ -137,19 +140,20 @@ hr {
   text-align: center;
   background-color: var(--primary-color);
   color: white;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
   border-top-left-radius: 1rem;
 }
 
-.footer .heading{
+.footer .heading {
   font-weight: bolder;
   font-size: larger;
 }
 
 .footer ul {
-  padding-inline-start:0px;
+  padding-inline-start: 0px;
 }
 
-.footer a{
-  color:white;
+.footer a {
+  color: white;
+  font-size: 2rem;
 }
