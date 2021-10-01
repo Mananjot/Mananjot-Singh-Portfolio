@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+:root {
+  --primary-color: #3cdac5;
+  --secondary-color: #08ccb4;
+  --gray: #ebf0f7;
+  --dark-gray: #6b7280;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+hr {
+  margin: 2rem 0;
+}
+/* containers */
+.container {
+  padding: 0rem 1rem;
+}
+
+.container-center-80 {
+  width: 80%;
+  margin: auto;
+}
+
+.container-center-60 {
+  width: 60%;
+  margin: auto;
+}
+
+.container-center-40 {
+  width: 40%;
+  margin: auto;
+}
+
+/* links */
+.link {
+  text-decoration: none;
+  padding: 0.5rem;
+  width: max-content;
+  min-width: 140px;
+}
+.link-primary {
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.link-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+.link-secondary {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+}
+
+.link-secondary:hover {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+/* lists */
+.list-unordered {
+  list-style-type: none;
+}
+
+/* display inline automatically removes the bullets */
+.list-inline li {
+  display: inline;
+}
+
+/* navigation */
+.navigation {
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-bottom-right-radius: 1rem;
+  color: white;
+}
+
+.navigation .brand {
+  font-weight: 800;
+}
+
+.navigation ul {
+  text-align: right;
+}
+
+.navigation a {
+  color: white;
+}
+
+.active {
+  font-weight: bolder;
+}
+
+.navigation a:hover {
+  color: var(--secondary-color);
+}
+
+/* header */
+.avatar {
+  color: var(--dark-gray);
+  display: block;
+}
+
+.avatar img {
+  max-width: 60%;
+  margin: auto;
+  display: block;
+}
+
+.avatar h1 {
+  text-align: center;
+  margin: 2rem 0rem;
+}
+
+/* section  */
+.section {
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.section h2 {
+  text-align: center;
+}
+
+.ow {
+  background-color: var(--gray);
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem 0rem;
+  border-top-left-radius: 1rem;
+}
+
+.footer .heading{
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.footer ul {
+  padding-inline-start:0px;
+}
+
+.footer a{
+  color:white;
+}
