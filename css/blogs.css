@@ -1,0 +1,36 @@
+:root {
+  --secondary-color: #08ccb4;
+  --light-gray: #ebf0f756;
+}
+
+body{
+    line-height: 1.5;
+}
+
+.blog {
+  font-family: "Times New Roman", Times, serif;
+  color: #666666;
+  text-align: justify;
+  padding: 1rem 1rem;
+  margin: 2rem 0rem;
+  border-radius: 0.5rem;
+}
+
+.ow-light {
+  background-color: var(--light-gray);
+}
+
+section ul li , section ol li{
+  padding-bottom: 8px;
+}
+
+.img-conatiner{
+    width: 50%;
+    margin: auto;
+}
+
+section img{
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+}

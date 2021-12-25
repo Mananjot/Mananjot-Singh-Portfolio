@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Crisp DM</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/blogs.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container-center-80">
+        <nav class="navigation">
+            <div class="container">
+                <div class="brand"><a href="/blogs.html"> <i class="fas fa-arrow-left"></i> </a></div>
+            </div>
+        </nav>
+
+        <section class="blog ow-light">
+            <h2>Data Mining: Crisp DM </h2>
+            <p> July 17, 2020 </p>
+            <section>
+                <p>
+                    <strong><em> Data Mining </em></strong> is a process process to extract usable data from a larger
+                    set of
+                    any raw data. It implies analysing data patterns in large batches of data using one or more
+                    software.
+                </p>
+            </section>
+
+            <section>
+                <h3> CRISP DM </h3>
+                <p>
+                    <strong> CRISP - DM </strong> stands for Cross-Industry Standard process for Data Mining whose aim
+                    is to develop a tool
+                    and application neutral process for conducting data mining and define tasks, outputs from these
+                    tasks.
+                </p>
+                <p>
+                    <em> It has <strong> four level of abstraction </strong></em>
+                </p>
+                <ul>
+                    <li>
+                        <strong> Phases: </strong> One of the example of phases is Data Preparation
+                    </li>
+                    <li>
+                        <strong>Generic Tasks:</strong> A Stable, general and complete set of tasks. Example: Data
+                        Cleaning
+
+                    </li>
+                    <li>
+                        <strong>Specialised Task:</strong> How is the Generic task carried out. Example: Missing Value
+                        Handling
+
+                    </li>
+                    <li>
+                        <strong>Process Instance: </strong>One of the example of Process instance is the mean value for
+                        numeric
+                        attributes
+                        and the median for categorical attributes was used
+                    </li>
+
+                </ul>
+            </section>
+
+            <section>
+                <h4> Data Mining Context </h4>
+                In data mining the context is defined by four dimensions
+
+                <ul>
+                    <li>
+                        <strong>Application domain:</strong> Medical Prognosis
+                    </li>
+                    <li>
+                        <strong>Data Mining Problem Type:</strong> Regression
+                    </li>
+                    <li>
+                        <strong>Technical Aspect:</strong> Censored Observations
+                    </li>
+                    <li>
+                        <strong>Tools and Techniques:</strong> Cox’s Regression, CIL’s GENNA.
+                    </li>
+                </ul>
+                The context of the data mining task at hand is the starting point for mapping the generic tasks to
+                specific
+                tasks required in this instance. When actual event of interest is not observed, it is known as Censored
+                observation.
+            </section>
+
+            <section>
+                <h3> Phases of CRISP DM </h3>
+                <div class="img-conatiner">
+                    <img src="/images/blog-images/CRISPDM_Process_Diagram.png" alt="CRISPDM_Process_Diagram">
+                </div>
+                <em> It is non - linear, there is repeatedly backtracking. </em>
+            </section>
+
+            <section>
+                <h4> Business Understanding Phase </h4>
+                <ul>
+                    <li><strong>Understand the business objectives:</strong> It need to understand the business
+                        objective, the business process, cost/benefit analysis</li>
+                    <li><strong>Current Systems Assessment:</strong> Identify the key actors, minimum the Sponsor and
+                        the Key User, What forms should the output take?, Integration of output with existing technology
+                        landscape and
+                        Understand Market norms and standards</li>
+                    <li><strong>Task Decomposition: </strong>Break down the objective into sub-tasks and Map sub-tasks
+                        to data mining problem definitions</li>
+                    <li><strong>Identify Constraints:</strong> Resources and Law e.g. Data Protection</li>
+                    <li><strong>Build a project plan:</strong> List assumptions and risk
+                        (technical/financial/business/organisational)
+                        factors</li>
+                </ul>
+            </section>
+
+            <section>
+                <h4> Data Understanding Phase </h4>
+                <ul>
+                    <li><strong> Data: </strong>Internal and External Sources (e.g. Axiom, Experian), Document reasons
+                        for
+                        inclusion/exclusions, Depend on a domain expert and Accessibility issues</li>
+                    <li><strong>Data Description: </strong>Document data quality issues, requirements for data
+                        preparation and Compute
+                        basic statistics</li>
+                    <li><strong>Data Exploration:</strong> Simple univariate data plots/distributions, Investigate
+                        attribute interactions
+                        and Data Quality Issues</li>
+                </ul>
+            </section>
+
+            <section>
+                <h4> Data Preparation Phase </h4>
+                <ul>
+                    <li><strong>Integrate data:</strong> Joining multiple data tables and Sumarisation/aggregation of
+                        data.</li>
+                    <li><strong>Select Data</strong></li>
+                    <li><strong>Attribute subset selection</strong></li>
+                    <li><strong>Rationale for Inclusion/Exclusion and Data sampling</strong></li>
+                    <li><strong>Training/Validation and Test sets</strong></li>
+                    <li><strong>Data Transformation:</strong> Using functions such as log, Factor/Principal Components
+                        analysis and
+                        Normalization/Discretisation</li>
+                    <li><strong>Clean Data: Handling missing values/Outliers</strong></li>
+                    <li><strong>Data Construction: Derived Attributes</strong></li>
+                </ul>
+            </section>
+
+            <section>
+                <h4> Modelling Phase </h4>
+                <ul>
+                    <li><strong>Selection of the appropriate modelling technique:</strong> pre-processing implications
+                        on
+                        attribute independence and Data types/Normalisation/Distributions. It is dependent on Data
+                        mining
+                        problem type and Output requirements</li>
+                    <li><strong>Develop a testing regime:</strong> By sampling,Verify samples have similar
+                        characteristics and
+                        are representative of the population</li>
+                    <li><strong>Build Model:</strong> Choose initial parameter settings and Study model behavior</li>
+                    <li><strong>Assess the model:</strong> Beware of Over-fitting, Investigate the error distribution,
+                        Identify
+                        segments of the state space where the model is less effective, Iteratively adjust parameter
+                        settings and then Document reasons of these changes</li>
+                </ul>
+            </section>
+
+            <section>
+                <h4> Evaluation Phase </h4>
+                <ul>
+                    <li><strong>Validate Model:</strong> Human evaluation of results by domain experts, Evaluate
+                        usefulness of results
+                        from business perspective, Define control groups, Calculate Lift curves and Expected Return on
+                        Investment</li>
+                    <li><strong>Review Process</strong></li>
+                    <li><strong>Determine next steps:</strong> Potential for deployment, Deployment architecture and
+                        Metrics for success
+                        of deployment</li>
+                </ul>
+            </section>
+
+            <section>
+                <h4> Deployment Phase </h4>
+                It is important to develop an algorithm that is coherent with present IT structure or else the algorithm
+                will never be used in reality.
+                <ul>
+                    <li><strong>Knowledge Deployment is specific to objectives:</strong> Knowledge Presentation,
+                        Deployment within
+                        Scoring Engines and Integration with the current IT infrastructure - Automated pre-processing of
+                        live
+                        data feeds and XML interfaces to 3rd party tools, Generation of a report - Online/Offline and
+                        monitoring and evaluation of effectiveness</li>
+                    <li><strong>Process deployment</strong></li>
+                    <li><strong>Produce final project Report:</strong> Document everything along the way</li>
+                </ul>
+            </section>
+
+            <a href="/blogs.html" class="link link-secondary"> Back </a>
+        </section>
+
+        <footer class="footer container">
+            <div>
+                <div>Social Media</div>
+                <ul class="list-inline">
+                    <li>
+                        <a class="link" href="https://github.com/Mananjot/" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://www.linkedin.com/in/mananjot-singh-kohli-b349a4185/"
+                            target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://twitter.com/singh_mananjot" target="_blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

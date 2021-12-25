@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs | Mananjot Singh Kohli</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/blogs.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container-center-80">
+        <nav class="navigation">
+            <div class="container">
+                <div class="brand"><a href="/blogs.html"> <i class="fas fa-arrow-left"></i> </a></div>
+            </div>
+        </nav>
+
+        <section class="blog ow-light">
+            <h2>Text Analysis: Introduction </h2>
+            <p> August 19, 2020 </p>
+
+            <section>
+                <h3> What is Text Analysis? </h3>
+                <p>
+                    Text analysis is the process of automatically classifying and extracting meaningful information from
+                    unstructured text. It involves detecting and interpreting trends and patterns to obtain relevant
+                    insights from data in just seconds.
+                </p>
+            </section>
+
+            <section>
+                <h3> Text Analysis - Transition from Structured Data to Unstructured Data </h3>
+                <p>
+                    Text analysis is usually performed on the text that is present inside the document in a
+                    <em>Unstructured
+                        Format </em>, unlike supervised or unsupervised learning as discussed earlier. Thus the first
+                    task of Text
+                    Analysis comes out to be conversion of this <strong>Unstructured Data</strong> to <strong>Structured
+                        Data</strong> i.e to represent
+                    the data in the tabular form and this process is known as the <em><strong>Text
+                            Vectorisation</strong> (Discussed Later in
+                        the Post).</em>
+                </p>
+            </section>
+
+            <section>
+                <h3> Understanding the Document </h3>
+                As text analysis involves extraction of information from the document it becomes important to understand
+                the basic <strong><em>characteristics</em></strong> of the document that are to be fed to the text
+                analyser, some of them are
+                mentioned below:
+
+                <ul>
+                    <li>
+                        <strong>Length:</strong> Different documents have different length and thus while extracting
+                        information this factor is to be considered as the length of the documents on which the analyser
+                        is trained must be different from the documents it will encounter in future
+                    </li>
+                    <li>
+                        <strong>Language:</strong> A document is the sequence of words from a selected vocabulary and it
+                        becomes important to understand the language of the document in which it is written
+                    </li>
+                    <li>
+                        <strong>Author of the Document:</strong> It is the very important aspect to be considered during
+                        the training of text analysis model, the reason behind is that each individual have
+                        <em>different
+                            set of vocabulary and writing styles </em>. Thus while comparing to available documents, a
+                        machine
+                        should not spot the words used but the thing to be focused is what the document conveys and thus
+                        forcing <strong><em> text analysis to be the study of "semantics" of the document rather than
+                                the understanding the "concrete meaning" of each word </em></strong>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3> The Three Schools </h3>
+                In the evolution of Text Analysis history has seen the contributions from the "Three major Schools",
+                which are named and explained as followed:
+
+                <ul>
+                    <li>
+                        <strong>The Information Retrieval Scientists:</strong> The information retrieval scientists are
+                        the one who are involved in building the search engines and help us find the things as per
+                        requirement from the huge mass on the internet. As per there domain, there focus on text
+                        analysis can be quoted as
+                        <p></p>
+                        <center><strong><em>"Finding a needle in the haystack when given query by the
+                                    user"</em></strong></center>
+                        <p></p>
+                    </li>
+                    <li>
+                        <strong>The Bayesian's:</strong> The Bayesian's or the Statisticians were interested in
+                        <strong><em>understanding the statistical properties of the documents</em></strong>
+                    </li>
+                    <li>
+                        <strong>Neural Scientists:</strong> The people who were into Neural Net's and Deep Learning
+                        wanted to get away from the symbols i.e the words and for this <strong><em>came up with some
+                                numeric
+                                continuous representation of the symbols.</em></strong>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3> Sub Disciplines of Text Analysis </h3>
+                There are numerous fields and systems where the text analysis is required and is currently used, some of
+                them are mentioned below:
+
+                <ul>
+                    <li>
+                        Works on Dialogue systems
+                    </li>
+                    <li>
+                        Machine Translation
+                    </li>
+                    <li>
+                        Text to speech
+                    </li>
+                    <li>
+                        Question and answering systems (like siri, google assistant etc)
+                    </li>
+                    <li>
+                        Spell Correction System
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3> Basic Terminology </h3>
+                There is some basic terminology that should be known before we start knowing more about Text Analysis
+                <ol>
+                    <li>
+                        <strong>Stop Words:</strong> Stop words are the words that do not really add to the meaning of
+                        the document at the statistical level, they actually appear as the grammatical constructs of the
+                        language. For example: the, that, when, whom, who etc.
+                    </li>
+                    <li>
+                        <strong>Tokenisation:</strong> When we represent each word in a document as a separate entity,
+                        the process is called as the Tokenisation and each word is said to be as the tokens.
+                    </li>
+                    <li>
+                        <strong>Term Frequency:</strong> Number of times the word appear in a document represents the
+                        Term Frequency, term frequency is Document Specific.
+                    </li>
+                    <li>
+                        <strong>Document Specific:</strong> Number of documents in which the word appears is represented
+                        as Document Frequency, document frequency is Corpus Specific.
+                    </li>
+                </ol>
+            </section>
+
+            <section>
+                <h3> Different Approaches for Text Analysis </h3>
+                So far we have seen that "The Three Schools" that have contributed to Text Analysis and it is the right
+                to introduce the methods established by these schools. The methods are discussed in depth in the further
+                posts.
+                <h4> 1. TFIDF </h4>
+                Term Frequency Inverse Document Frequency i.e TFIDF is the approach of identifying the how important is
+                a word that appears in a document as compared to other words that appears in the other documents.
+
+                Thus Tfidf is the method that plays with the occurrences of different words and can be said that it
+                gives the syntactical relations between the documents rather than seeing the semantic relations thus
+                fails for comparison between two documents depicting the same idea in which the vocabulary varies
+                drastically.
+
+                <h4> 2. LSA </h4>
+                LSA stands for Latent Semantic Analysis is the approach that moves from syntactical representation of
+                Language to Semantic Representation of Language, thus understanding the meaning of the document and
+                making the Text Analysis more efficient.
+
+                <em> Note: Both TFIDF and LSA were the methods designed by the "information retrievers school". </em>
+                <h4> 3. LDA </h4>
+                LSA stands for Latent Dirichlet Allocation designed by the The Bayesian's, being the statisticians they
+                went for the probabilistic approach and like LSA, LDA also focuses on the idea depicted in the document
+                rather than words as in Tfidf. LDA falls in the category of very popular model of Text Analysis called
+                as the Topic Models.
+
+                <em> Also it is to be noted that Bayesian's have involved themselves in the other popular models like
+                    Probabilistic Latent Semantic Analysis (pLSA), Hidden Markov Models (HMM) and Conditional Random
+                    Field
+                    (CRF).</em>
+                <h4> 4. Word Embedding </h4>
+                <p>
+                    Word Embedding is one of the latest approaches used today, developed by The Neural Scientists from
+                    google, Stanford and Facebook. Most famous word embedding model or methods include <strong>Word2Vec,
+                        Glove Model
+                        (Global Vectors) and the Fast Text.</strong>
+
+                </p>
+                <p>
+                    The idea used by the Neural Scientists is to create a high Dimensional Space of around 100 to 300
+                    dimensions and map each word to that space. Thus getting the Vectors for each word in high dimension
+                    space in such a manner that similar words are close to each other and the words with no relations
+                    are
+                    far apart from each other.
+
+                </p>
+                <p>
+                    Other than adding Semantic Analysis on the documents, <em>Word Embedding made possible to include
+                        "mathematics" on a symbols(letters) of which no one has ever thought of, Let us consider a
+                        beautiful example to see how the mathematics was included in the word Embedding.</em>
+                </p>
+
+                <div class="img-conatiner">
+                    <img src="/images/blog-images/word-embeddings.png" alt="word-embeddings-img">
+                </div>
+
+                <p><strong>
+                        <center> MATHS ON WORK!! </center>
+                    </strong></p>
+                In short, word embedding helps to get the idea of the documents and gives mathematical representation of
+                words as well.
+            </section>
+
+            <section>
+                <h3> Text Vectorisation</h3>
+                <p>
+                    Very soon we will be getting deep into the <strong>Text Analysis</strong> concepts and will be
+                    studying
+                    above mentioned
+                    approaches in detail. Before entering into that we must notice that there is one technique called as
+                    <strong><em>Text Vectorisation </em></strong>which is used in almost all the approaches mentioned
+                    above.
+                </p>
+                <p>
+                    Thus it becomes one of the initial steps for building any Text Analyser, other being the
+                    <em><strong>stop word removal </strong> (i.e Vectorisation is done after stop word removal)</em>
+                </p>
+                <p>
+                    As discussed earlier a document is a unstructured data and thus it is needed to be structured before
+                    we use it, and Text vectorisor is the one that help us in this, we can formally define it as
+                </p>
+                <center>
+                    <em>
+                        <strong>
+                            Text Vectorisation is the process of translating the corpus into a Tabular form in which
+                            every document of the corpus represents the Row and each word in a corpus represents the
+                            column
+                        </strong>
+                    </em>
+                </center>
+                <p>
+                    Thus each of the row can be interpreted as the vector in the |V| dimensions, where we is the size of
+                    the
+                    vocabulary used in the corpus.
+                </p>
+            </section>
+
+            <section>
+                <h4> Why Vectorisation? </h4>
+                <p>
+                    The method is called as the vectorisation because we taking each document in a high dimensional
+                    space and any <em> point in that n-dimensional space represents the document called as the
+                        vector.</em>
+                </p>
+                <p>
+                    The similarity between two documents is dependent on the angle of between the vectors. Thus it
+                    becomes useful while comparing the two documents.
+                </p>
+            </section>
+
+            <section>
+                <h4> Approaches for Vectorisation </h4>
+                <p>
+                    Before using any approach to vetorise we need to do the following:
+                </p>
+                <ul>
+                    <li>Tokenization of the documents</li>
+                    <li>Removing the punctuation</li>
+                    <li>Stop word removal</li>
+                </ul>
+                <p>
+                    After doing these operations we get something that is called as <strong>Bag of Words</strong>, in
+                    which there is no
+                    grammatical constraints nor the order is important and thus considered only as the collection of
+                    words in a bag.
+                </p>
+                <p>
+                    Now we have the bag of words from the corpus, which will help us in structuring (tabulating) the
+                    data and this can be done in any of the two ways given below:
+                </p>
+                <h5>
+                    1. Binary Vectoriser
+                </h5>
+                <p>
+                    A binary vectoriser is the one which only marks the presence or the absence of a given word in a
+                    particular document. If a word is<em>present in a document than it is marked as 1 otherwise it is
+                        marked as 0.
+                    </em>
+                </p>
+                <h5>
+                    1. Count Vectoriser
+                </h5>
+                <p>
+                    As the name specifies it is the vectorisor that actually tells how many times a particular word has
+                    appeared in a particular document, i.e <em>we keep the count of a particular word in a particular
+                        document, thus getting more information about the corpus.</em>
+                </p>
+            </section>
+            <a href="/blogs.html" class="link link-secondary"> Back </a>
+        </section>
+
+        <footer class="footer container">
+            <div>
+                <div class="heading">Social Media</div>
+                <ul class="list-inline">
+                    <li>
+                        <a class="link" href="https://github.com/Mananjot/" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://www.linkedin.com/in/mananjot-singh-kohli-b349a4185/"
+                            target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://twitter.com/singh_mananjot" target="_blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
